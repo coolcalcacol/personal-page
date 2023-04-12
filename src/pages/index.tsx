@@ -16,7 +16,7 @@ import {
 
 import logoWhyNot from '@/images/logos/whynot.svg';
 import logoNeilson from '@/images/logos/neilson.svg';
-import logoRYA from '@/images/logos/rya.svg';
+import logoRYA from '@/images/logos/RYA.svg';
 import logoCheesyToastShack from '@/images/logos/cheesy-toast-shack.svg';
 
 import image1 from '@/images/photos/4P1A4446.jpg';
