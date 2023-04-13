@@ -268,7 +268,7 @@ export default function Home() {
 							icon={GitHubIcon}
 						/>
 						<SocialLink
-							href="https://linkedin.com/alex-dumbreck"
+							href="https://www.linkedin.com/in/alex-dumbreck"
 							aria-label="Follow on LinkedIn"
 							icon={LinkedInIcon}
 						/>
