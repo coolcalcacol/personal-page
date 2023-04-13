@@ -131,6 +131,9 @@ export default function Uses() {
 							looks tatty now, but still works as a chair.
 						</Tool>
 					</ToolsSection>
+					<ToolsSection title="Laptop">
+						<Tool title="Dell XPS 15">it a laptop doe</Tool>
+					</ToolsSection>
 					<ToolsSection title="Development tools">
 						<Tool title="JetBrains IDE Suite">
 							I get the JetBrains tools for free, through the
