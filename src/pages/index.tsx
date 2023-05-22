@@ -14,6 +14,7 @@ import {
 	LinkedInIcon,
 } from '@/components/SocialIcons';
 
+import logoWeatherbys from '@/images/logos/weatherbys.svg'
 import logoWhyNot from '@/images/logos/whynot.svg';
 import logoNeilson from '@/images/logos/neilson.svg';
 import logoRYA from '@/images/logos/RYA.svg';
@@ -89,6 +90,16 @@ function SocialLink({
 
 function Resume() {
 	let resume: WorkExperience[] = [
+		{
+			company: 'Weatherbys Bank',
+			title: 'Junior Software Engineer',
+			logo: logoWeatherbys,
+			start: '2023',
+			end: {
+				label: "Present",
+				dateTime: new Date().getFullYear().toString()
+			}
+		},
 		{
 			company: 'Why Not Nightclub',
 			title: 'Bartender',
