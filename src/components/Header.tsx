@@ -52,10 +52,10 @@ function ChevronDownIcon(props: any) {
 function MobileNavItem({
 	href,
 	children,
-}: {
+}: Readonly<{
 	href: string;
 	children?: ReactNode;
-}) {
+}>) {
 	return (
 		<li>
 			<Popover.Button as={Link} href={href} className="block py-2">
@@ -122,7 +122,7 @@ function MobileNavigation(props: any) {
 	);
 }
 
-function NavItem({ href, children }: { href: string; children?: ReactNode }) {
+function NavItem({ href, children }: Readonly<{ href: string; children?: ReactNode }>) {
 	let isActive = useRouter().pathname === href;
 
 	return (

@@ -1,6 +1,6 @@
 /** @format */
 
-import React from 'react';
+import React, { DetailedHTMLProps, HTMLAttributes, ReactElement } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -76,11 +76,11 @@ function SocialLink({
 	icon: Icon,
 	href,
 	...props
-}: {
-	icon: any;
+}: Readonly<{
+	icon: (props: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>) => ReactElement;
 	href: string;
-	props?: any[];
-}) {
+	props?: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
+}>) {
 	return (
 		<Link className="group -m-1 p-1" href={href} {...props}>
 			<Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
@@ -92,13 +92,20 @@ function Resume() {
 	let resume: WorkExperience[] = [
 		{
 			company: 'Weatherbys Bank',
-			title: 'Junior Software Engineer',
+			title: 'Full Stack Software Engineer',
 			logo: logoWeatherbys,
-			start: '2023',
+			start: 'May 2024',
 			end: {
 				label: "Present",
-				dateTime: new Date().getFullYear().toString()
+				dateTime: `${new Date().getFullYear()}`
 			}
+		},
+		{
+			company: 'Weatherbys Bank',
+			title: 'Junior Software Engineer',
+			logo: logoWeatherbys,
+			start: 'June 2023',
+			end: 'May 2024'
 		},
 		{
 			company: 'Why Not Nightclub',
@@ -121,7 +128,7 @@ function Resume() {
 			start: '2020',
 			end: {
 				label: 'Present',
-				dateTime: new Date().getFullYear().toString(),
+				dateTime: `${new Date().getFullYear()}`
 			},
 		},
 		{
@@ -206,7 +213,7 @@ function Resume() {
 					</li>
 				))}
 			</ol>
-			{/*TODO: Re-implement this once CV is sorted */}
+			{/* Re-implement this once CV is sorted */}
 			{/*<Button href="#" variant="secondary" className="group mt-6 w-full">*/}
 			{/*  Download CV*/}
 			{/*  <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />*/}
