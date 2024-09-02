@@ -50,7 +50,6 @@ export default function Projects() {
 				title="Things I’ve made."
 				intro="I’ve worked on tons of little projects over the years and these are the ones that I’m most proud of.">
 				<ul
-					role="list"
 					className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
 					{projects.map((project) => (
 						<Card as="li" key={project.name}>

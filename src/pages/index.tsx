@@ -252,16 +252,16 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Alex Dumbreck - Jr. Software engineer</title>
+				<title>Alex Dumbreck - Full Stack Software engineer</title>
 				<meta
 					name="description"
-					content="I’m Alex, a software engineer based in Edinburgh, Scotland. I’m currently in my second year of University, at Edinburgh Napier University."
+					content="I’m Alex, a full stack software engineer based in Edinburgh, Scotland. I’m currently in my second year of University, at Edinburgh Napier University."
 				/>
 			</Head>
 			<Container className="mt-9">
 				<div className="max-w-2xl">
 					<h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-						Junior Software Engineer and an Avid Sailor
+						Full Stack Software Engineer and an Avid Sailor
 					</h1>
 					<p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
 						Hi! I’m Alex, a{' '}
@@ -270,7 +270,7 @@ export default function Home() {
 								Date.now() - new Date(2004, 1, 10).valueOf(),
 							).getUTCFullYear() - 1970,
 						)}{' '}
-						year old junior software engineer based in Edinburgh,
+						year old full stack software engineer based in Edinburgh,
 						Scotland. I’m currently in my second year of University,
 						at Edinburgh Napier University.
 					</p>
